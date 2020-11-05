@@ -7,7 +7,7 @@ spec:
   releaseName: podinfo
   chart:
     git: https://github.com/anqingxu/podinfo
-    ref: v5.x
+    ref: v3.x
     path: charts/podinfo
   values:
     replicaCount: 1
