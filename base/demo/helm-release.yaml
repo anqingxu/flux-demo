@@ -10,4 +10,4 @@ spec:
     ref: v3.x
     path: charts/podinfo
   values:
-    replicaCount: 1
+    replicaCount: 3
