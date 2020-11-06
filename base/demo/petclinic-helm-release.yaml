@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: petclinic
+  namespace: demo
+spec:
+  releaseName: petclinic
+  chart:
+    git: https://github.com/anqingxu/spring-petclinic-helm
+    ref: v1.0.0
+    path: spring-petclinic
+  values:
+    replicaCount: 1
