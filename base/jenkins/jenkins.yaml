@@ -7,7 +7,7 @@ spec:
   master:
     basePlugins:
     - name: kubernetes
-      version: 1.27.4
+      version: "1.27.4"
     - name: workflow-job
       version: "2.40"
     - name: workflow-aggregator
