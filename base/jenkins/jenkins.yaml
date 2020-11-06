@@ -25,7 +25,7 @@ spec:
         version: 1.32.0
     containers:
     - name: jenkins-master
-      image: jenkins/jenkins:lts
+      image: anqingxu/jenkins-maven:v1.0.0
       imagePullPolicy: Always
       livenessProbe:
         failureThreshold: 12
