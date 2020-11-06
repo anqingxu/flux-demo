@@ -7,7 +7,7 @@ spec:
   releaseName: petclinic
   chart:
     git: https://github.com/anqingxu/spring-petclinic-helm
-    ref: v1.0.0
+    ref: master
     path: spring-petclinic
   values:
-    replicaCount: 1
+    replicaCount: 2
