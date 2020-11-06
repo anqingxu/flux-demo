@@ -7,7 +7,7 @@ spec:
   master:
     basePlugins:
     - name: kubernetes
-      version: 1.18.3
+      version: 1.27.4
     - name: workflow-job
       version: "2.40"
     - name: workflow-aggregator
@@ -23,6 +23,9 @@ spec:
     plugins:
       - name: github
         version: 1.32.0
+      - name: pipeline-maven
+        version: 3.9.3
+      - name:
     containers:
     - name: jenkins-master
       image: jenkins/jenkins:lts
