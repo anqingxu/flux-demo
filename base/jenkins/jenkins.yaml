@@ -42,7 +42,7 @@ spec:
         successThreshold: 1
         timeoutSeconds: 5
       readinessProbe:
-        failureThreshold: 10
+        failureThreshold: 12
         httpGet:
           path: /login
           port: http
