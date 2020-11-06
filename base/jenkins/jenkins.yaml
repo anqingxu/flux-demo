@@ -28,7 +28,7 @@ spec:
       image: anqingxu/jenkins-maven:v1.0.1
       imagePullPolicy: Always
       livenessProbe:
-        failureThreshold: 12
+        failureThreshold: 10
         httpGet:
           path: /login
           port: http
@@ -38,7 +38,7 @@ spec:
         successThreshold: 1
         timeoutSeconds: 5
       readinessProbe:
-        failureThreshold: 12
+        failureThreshold: 10
         httpGet:
           path: /login
           port: http
