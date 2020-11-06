@@ -25,7 +25,6 @@ spec:
         version: 1.32.0
       - name: pipeline-maven
         version: 3.9.3
-      - name:
     containers:
     - name: jenkins-master
       image: anqingxu/jenkins-maven:v1.0.1
