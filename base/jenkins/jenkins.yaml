@@ -63,9 +63,9 @@ spec:
           cpu: "1"
           memory: 500Mi
   seedJobs:
-  - id: jenkins-operator-petclinic-example
-    targets: "cicd/jobs/*.jenkins"
-    description: "Build petclinic using Jenkins operator"
-    repositoryBranch: master
-    repositoryUrl: https://github.com/anqingxu/petclinic.git
+  - id: jenkins-operator-spring-petclinic
+    targets: "JenkinsSeedJob"
+    description: "Build petclinic using Jenkins k8s operator"
+    repositoryBranch: main
+    repositoryUrl: https://github.com/anqingxu/spring-petclinic.git
     githubPushTrigger: false
