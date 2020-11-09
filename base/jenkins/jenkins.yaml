@@ -63,9 +63,9 @@ spec:
           cpu: "1"
           memory: 500Mi
   seedJobs:
-  - id: jenkins-operator-spring-petclinic
-    targets: "JenkinsSeedJob"
-    description: "Build petclinic using Jenkins k8s operator"
+  - id: jenkins-seed-jobs
+    targets: "seedJob*.groovy"
+    description: "Seed jobs for Jenkins"
     repositoryBranch: main
-    repositoryUrl: https://github.com/anqingxu/spring-petclinic.git
+    repositoryUrl: https://github.com/anqingxu/jenkins.git
     githubPushTrigger: false
