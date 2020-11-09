@@ -3,6 +3,9 @@ kind: HelmRelease
 metadata:
   name: petclinic
   namespace: demo
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:v1.0.*
 spec:
   releaseName: petclinic
   chart:
@@ -11,3 +14,6 @@ spec:
     path: spring-petclinic
   values:
     replicaCount: 1
+    image:
+      repository: anqingxu/petclinic
+      tag: v1.0.6
