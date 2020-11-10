@@ -14,7 +14,7 @@ spec:
     ref: master
     path: spring-petclinic
   values:
-    replicaCount: 1
+    replicaCount: 7
     image:
       repository: anqingxu/petclinic
       tag: v1.0.13
