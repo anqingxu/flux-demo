@@ -17,4 +17,4 @@ spec:
     replicaCount: 3
     image:
       repository: anqingxu/petclinic
-      tag: v1.0.9
+      tag: v1.0.10
