@@ -31,6 +31,8 @@ spec:
         version: "1.28"
       - name: amazon-ecr
         version: "1.6"
+      - name: github-branch-source
+        version: 2.9.1
     containers:
     - name: jenkins-master
       image: anqingxu/jenkins-maven:v1.0.1
