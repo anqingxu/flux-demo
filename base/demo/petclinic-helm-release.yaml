@@ -5,6 +5,7 @@ metadata:
   name: petclinic
   namespace: demo
   annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: nlb
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: glob:v1.0.*
 spec:
@@ -20,3 +21,4 @@ spec:
       tag: v1.0.22
     service:
       type: LoadBalancer
+      port: 80
