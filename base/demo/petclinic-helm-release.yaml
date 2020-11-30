@@ -21,4 +21,4 @@ spec:
       type: NodePort
       port: 8081
     ingress:
-      enabled: true
+      enabled: false
