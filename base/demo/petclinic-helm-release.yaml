@@ -1,3 +1,4 @@
+---
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
@@ -16,7 +17,7 @@ spec:
     replicaCount: 1
     image:
       repository: 632912596221.dkr.ecr.us-east-1.amazonaws.com/petclinic
-      tag: v1.0.22
+      tag: v1.0.23
     service:
       type: NodePort
       port: 8081
